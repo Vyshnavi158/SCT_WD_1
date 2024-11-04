@@ -1,0 +1,67 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+#home { background-color: #f4f4f4; color: #1d1561; font-size: larger}
+#about { background-color: #eaeaea; color: #61152e; font-size: larger}
+#services { background-color: #dcdcdc; }
+#contact { background-color: #cfcfcf; }
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    display: block;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+    border-bottom: 2px solid #ff6347;
+}
+
+/* Scroll Effect */
+.scrolled {
+    background-color: #222;
+}
+
+.scrolled a {
+    color: #fff;
+}
+
+/* Active Menu Item on Hover */
+nav ul li a.active {
+    color: #ff6347;
+    border-bottom: 2px solid #ff6347;
+}
